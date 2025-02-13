@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import { useAuth0 } from "@auth0/auth0-react";
 import LoginButton from "./components/LoginButton";
 import Profile from "./components/Profile";
+import useAuthToken from "../hooks/useAuthToken";
 
 const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const { isAuthenticated } = useAuth0();
@@ -10,9 +11,7 @@ const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({ children }) =
 
 
 const App = () => {
-  const { isAuthenticated } = useAuth0();
-
-  console.log("Estado de autenticación:", isAuthenticated);
+  useAuthToken();
 
   return (
     <Router>

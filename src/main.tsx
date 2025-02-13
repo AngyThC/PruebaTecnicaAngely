@@ -11,7 +11,8 @@ if (container) {
       domain="dev-liasfkyc8wblsigm.us.auth0.com"
       clientId="u7QqtM0mKJI70glSevRG740xx9ENGmtK"
       authorizationParams={{ 
-        redirect_uri: window.location.origin 
+        redirect_uri: window.location.origin,
+        scope: "openid profile email offline_access" 
       }}
       useRefreshTokens={true}
       cacheLocation="localstorage"
