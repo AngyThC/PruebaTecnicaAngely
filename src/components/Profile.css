@@ -51,3 +51,19 @@
   body {
     background-color: #8281a7; 
   }
+
+  .refresh-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .refresh-button:hover {
+    background-color: #218838;
+  }
+  

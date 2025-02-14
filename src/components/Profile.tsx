@@ -1,6 +1,7 @@
 import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import LogoutButton from "./LogoutButton";
+import RefreshTokenButton from "./RefreshTokenButton";
 import "./Profile.css";
 
 const Profile = () => {
@@ -16,6 +17,7 @@ const Profile = () => {
         <img className="profile-picture" src={user?.picture} alt={user?.name} />
         <h2 className="profile-name">{user?.name}</h2>
         <p className="profile-email">{user?.email}</p>
+        <RefreshTokenButton />
         <LogoutButton/>
       </div>
     )
