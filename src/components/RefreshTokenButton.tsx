@@ -9,7 +9,7 @@ const RefreshTokenButton = () => {
         const newToken = await getAccessTokenSilently({
             cacheMode: "off",
           });          
-      console.log("🔄 Nuevo Access Token:", newToken);
+      //console.log("Nuevo Access Token:", newToken);
       alert("Nuevo Access Token obtenido");
     } catch (error) {
       console.error("Error al refrescar el token:", error);

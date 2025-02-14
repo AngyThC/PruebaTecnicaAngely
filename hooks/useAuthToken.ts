@@ -9,7 +9,7 @@ const CheckAuth = () => {
       if (isAuthenticated) {
         try {
           const token = await getAccessTokenSilently();
-          console.log("Nuevo Access Token:", token);
+          //console.log("Nuevo Access Token:", token);
         } catch (error) {
           console.error("Error obteniendo el token:", error);
         }

@@ -16,7 +16,8 @@ if (container) {
       clientId={clientId}
       authorizationParams={{ 
         redirect_uri: redirectUri,
-        scope: "openid profile email offline_access" 
+        scope: "openid profile email offline_access" ,
+        audience: "https://dev-liasfkyc8wblsigm.us.auth0.com/api/v2/" 
       }}
       useRefreshTokens={true}
       cacheLocation="localstorage"
